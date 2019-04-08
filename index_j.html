@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>One Million Lines</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
     <link rel="stylesheet" href="css/custom.css">
 
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
@@ -10,12 +13,65 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+<style>
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+      position: relative;
+      padding: 25px;
+    }
+    
+    .topnav #myLinks {
+      display: none;
+      /*visibility: visible;*/
+    }
+    
+    .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    
+    .topnav a.icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 13px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .active {
+      background-color: #272525;
+      color: white;
+    }
+    </style>
   </head>
   <body>
 
     <nav>
         <!-- Votre code ici -->
-            <div class="title">
+        <div class="topnav">
+          
+            <img src="images/top-logo.png">  
+          
+          <div id="myLinks">
+            <ul>
+              <li><a href="#who">WHO WE ARE</a></li>
+              <li><a href="#get-involved">GET INVOLVED</a></li>
+            </ul>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+            <!--<div class="title">
               <ul>
                 <li><a href="#who">WHO WE ARE</a></li>
                 <li><a href="#get-involved">GET INVOLVED</a></li>
@@ -23,7 +79,9 @@
               <div class="logo">
                 <img src="images/top-logo.png">  
               </div>
-            </div> 
+              
+              </div>
+            </div>--> 
       </nav>
 
     <div id="home">

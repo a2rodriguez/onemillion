@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>One Million Lines</title>
+    
     <link rel="stylesheet" href="css/custom.css">
 
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
@@ -15,15 +16,17 @@
 
     <nav>
         <!-- Votre code ici -->
-            <div class="title">
-              <ul>
-                <li><a href="#who">WHO WE ARE</a></li>
-                <li><a href="#get-involved">GET INVOLVED</a></li>
-              </ul>
-              <div class="logo">
-                <img src="images/top-logo.png">  
-              </div>
-            </div> 
+
+        <div class="title">
+          <ul>
+            <li><a href="#who">WHO WE ARE</a></li>
+            <li><a href="#get-involved">GET INVOLVED</a></li>
+          </ul>
+          <div class="logo">
+            <img src="images/top-logo.png">  
+          </div>
+        </div> 
+
       </nav>
 
     <div id="home">
@@ -92,6 +95,15 @@
     <div id="back-to-top" >
         <a href="#"><i class="fas fa-arrow-alt-circle-up fa-3x"></i></a>
     </div> 
-
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
   </body>
 </html>
