@@ -1,0 +1,319 @@
+/* ==================================================== */
+/* ============== FLEX BOX DEBUT =============== */
+/* ==================================================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', courier, serif;
+}
+
+/* UNITE DE MESURE*/
+/* pour les navigateurs modernes
+VH : Viewpoint Height
+VW : View Width
+Exemple :
+
+    1vw = 1% de la largeur de la fenêtre
+    1VH = 1% de la hauteur de la fenêtre
+    1vmin = 1vw ou 1VH, soit la valeur la plus petite
+    1vmax = 1vw ou 1VH, soit la valeur la plus grande
+    100vh = la hauteur MAXIMALE
+    100vw = la largeur MAXIMALE
+*/
+.logo{
+    margin-top: -25px;
+    width: 100%;
+    padding-left: 115px;
+}
+
+/* =========== NAV BAR DEBUT ========== */
+.title{
+    background-color: #272525;
+    color: #fff;
+}   
+
+.title ul {
+    color: white;
+    display: flex;
+    list-style-type: none;
+    margin-top: -24px;
+    margin:0 0 0 10px;
+    padding-right: 10px;
+    align-content: center; 
+    justify-content: flex-end;
+ }
+.title a {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-decoration: none;
+    align-content: center;
+    height: 15px;
+    justify-content: flex-end;
+    padding: 20px;
+    margin-right: 15px;
+    color: white;
+    background: #272525;
+  }
+
+.title> ul> li:hover{
+    text-decoration: none;
+    color: white;
+    background: #272525;
+  }
+
+
+/* =========== NAV BAR FIN ========== */
+
+
+/* =========== HOME DEBUT ========== */
+
+ .back-img  {
+    background-image: url(../images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    text-align:center;
+    align-content: center
+}
+
+.bokotra {
+    border: none;
+    font-family: Verdana, Tahoma, courier, serif;
+    background-color: rgb(182, 60, 60);
+    color: white;
+    padding: 18px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+.bokotra:hover {
+    background: rgb(184, 2, 2);
+    color: #fff;
+}
+
+.soratrab{
+    font-family: 'Arvo', courier, serif;
+    font-size: 80px;
+    color: white;
+}
+.soratrak{
+    font-family: 'Arvo', courier, serif;
+    font-size: 25px;
+    color: white;
+}
+
+.kontenera {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.kontenera1 {
+    position:relative;
+    width: 450%;
+}
+
+/* =========== HOME FIN ========== */
+
+/* =========== WHO DEBUT ========== */
+.iza {/* --- TRADUCTION WHO -----*/
+    background-image: url("../images/academy-brand-med.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+}
+.soratrah{ /* ------TRADUCTION AUTRE ECRITURE --------- */
+    font-family: Arvo;
+    font-size: 16px;
+    color: rgb(24, 20, 20);
+    text-align:center;
+}
+
+.soratramena{ /* ------- TRADUCTION ECRITURE ROUGE ---------*/
+    font-family: Arvo, Tahoma, sans-serif;
+    font-size: 34px;
+    color: rgb(224, 82, 82);
+    text-align:center;
+}
+
+.trait{
+
+    background-color: rgb(224, 82, 82);
+    height: 2pt;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* =========== WHO FIN ========== */
+
+/* =========== GET INVOLVED DEBUT ========== */
+
+.fonony{ /* PARENT */ /* ----------- TRADUCTION CONTAINER ------------*/
+    margin: 20px;
+    padding: 10px;
+    align-items: stretch; /* par défault*/
+}
+
+.kolona { /* ENFANT */  /* ----------- TRADUCTION COLONNE ------------*/
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    flex-basis: 30%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* Bouton fond blanc et lettre rouge */
+.bokotram { /* ----------- TRADUCTION BOUTON ROUGE ------------*/
+    font-family: Tahoma;
+    border: none;
+    background-color: wrgba(163, 161, 161, 0.37);
+    border: 1px rgb(71, 37, 37) solid;
+    color: rgb(224, 82, 82);
+    padding: 14px 28px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+  .bokotram:hover {
+    font-family: Tahoma, sans-serif;
+      background: rgba(163, 161, 161, 0.37);
+      color:rgb(224, 82, 82);
+    }
+
+.soramena{ /* ----------- TRADUCTION ECRITURE ROUGE------------*/
+    font-family: Arvo, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgb(224, 82, 82);
+    text-align:center;
+}
+/* =========== GET INVOLVED FIN  ========== */
+
+/* =================== BOUTON DEBUT ================= */
+#olona{ /* ----------- TRADUCTION USER ------------*/
+    background-color: black; 
+    color: white;
+    border-radius: 50%; 
+    width: 60px;
+    height: 60px;
+    padding: 15px 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#pensily{ /* ----------- TRADUCTION CRAYON ------------*/
+    background-color: black; 
+    color: white;
+    border-radius: 50%; 
+    width: 60px;
+    height: 60px;
+    padding: 15px 15px;
+    /*padding: 15px;*/
+    text-align: center;
+    
+
+    /*display: block;*/
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#vola{ /* ----------- TRADUCTION BILLET ------------*/
+
+    background-color: black; 
+    color: white;
+    border-radius: 50%; 
+    width: 60px;
+    height: 60px;
+    padding: 15px 15px;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* =================== BOUTON FIN ================= */
+
+.footer{
+    display: flex;
+    height: 130px;
+    bottom: 0px;
+    width: 100%;
+    padding-left: 15%;
+    background-color: #cc4938c0;
+
+    align-items: flex-end;
+}
+
+#back-to-top{
+    float: right; 
+    position: relative; 
+    bottom: 300px;
+    padding: 15px;
+    align-content: flex-end;
+}
+
+/* =================================================== */
+/* ==================== FLEX BOX DEBUT =============== */
+/* +================================================== */
+/* ---- LA RESPONSIVITE EST ICI --- */
+@media (min-width: 1199px){
+
+    .menu{
+        padding: 10px;
+        flex-direction: column;
+        height: auto;
+    }
+    .kontenera{
+        display: flex;
+        
+    }
+    .fonony{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 991px){
+    .menu{
+        padding: 10px;
+        flex-direction: column;
+        height: auto;
+    }
+    .kontenera{
+        display: flex;
+        flex-direction: column;
+    }
+    .fonony{ /* ----------- TRADUCTION COLONNE ------------*/
+        display: flex;
+    }
+}
+
+@media (min-width: 767px){
+    .menu{
+        padding: 10px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .kontenera{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fonony{
+        display: flex;
+        justify-content: space-between;
+    }
+
+/* ==================================================== */
+/* ==================== FLEX BOX FIN ================= */
+/* =================================================== */
